@@ -31,10 +31,10 @@
 }
 
 .page1 {
-    @apply flex flex-col;
+    @apply flex flex-col md:flex-row md:justify-between;
 
     .text-section {
-        @apply ml-10 mr-28 mt-24;
+        @apply ml-10 mr-28 mt-24 md:mr-10 flex-1;
         div {
             @apply border-b border-neutral-500;
         }
@@ -45,10 +45,10 @@
     }
     
     .image-section {
-        @apply flex justify-end mt-10 h-84;
+        @apply flex md:max-w-1/2 justify-end mt-10;
         .image-wrapper {
             box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.3);
-            @apply w-3/5 bg-white self-center p-2 mr-12 mt-12 rounded-sm;
+            @apply w-3/5 md:w-auto bg-white self-center p-2 mr-12 mt-12 rounded-sm;
             
             img {
                 @apply rounded-lg ;
