@@ -1,6 +1,6 @@
 <script>
-    import couplePic from '$lib/assets/images/couple-pic.jpg';
-    import couplePic2 from '$lib/assets/images/couple-pic-2.jpg';
+    import couplePic from '$lib/assets/images/couple-pic.jpg?enhanced';
+    import couplePic2 from '$lib/assets/images/couple-pic-2.jpg?enhanced';
 </script>
 
 <main class="container">
@@ -25,7 +25,7 @@
 
         <div class="image-section">
             <div class="image-wrapper">
-                <img src={couplePic} alt="couplePic1"/>
+                <enhanced:img src={couplePic} alt="couplePic1"/>
             </div>
         </div>
     </section>
@@ -42,10 +42,10 @@
 
         <div class="image-section relative">
             <div class="small-image-wrapper">
-                <img class="small-image" src={couplePic2} alt="couplePic2"/>
+                <enhanced:img class="small-image" src={couplePic2} alt="couplePic2"/>
             </div>
             <div class="big-image-wrapper">
-                <img class="" src={couplePic2} alt="couplePic2"/>
+                <enhanced:img class="" src={couplePic2} alt="couplePic2"/>
             </div>
         </div>
     </section>

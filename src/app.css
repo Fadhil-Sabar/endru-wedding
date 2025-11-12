@@ -77,10 +77,8 @@
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
         margin-top: 20px;
 
-        .small-image-wrapper {
-            @apply bg-black
-        }
         .small-image{
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
             @apply absolute w-28 p-1 bg-white -rotate-3
         }
         .big-image-wrapper {
