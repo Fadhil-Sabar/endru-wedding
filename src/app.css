@@ -1,1 +1,58 @@
 @import 'tailwindcss';
+
+@font-face {
+    font-family: 'Baskervville';
+    src: url('$lib/assets/fonts/Baskervville-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GreatVibes';
+    src: url('$lib/assets/fonts/GreatVibes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'E8Garamond';
+    src: url('$lib/assets/fonts/EBGaramond-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@theme {
+    --color-primary: #eeeae4;
+    --color-accent: #b5544e;
+    --font-baskervville: "Baskervville", serif;
+    --font-greatvibes: "GreatVibes", cursive;
+    --font-e8garamond: "E8Garamond", serif;
+}
+
+.container {
+    @apply text-[16px] mx-auto p-4 bg-primary min-h-screen;
+}
+
+.page1 {
+    @apply flex flex-col;
+
+    .text-section {
+        @apply ml-10 mr-28 mt-24;
+        div {
+            @apply border-b border-neutral-500;
+        }
+    
+        span {
+            @apply text-[1.5em] font-semibold tracking-tighter font-e8garamond
+        }
+    }
+    
+    .image-section {
+        @apply flex justify-end mt-10 h-84;
+        .image-wrapper {
+            box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.3);
+            @apply w-3/5 bg-white self-center p-2 mr-12 mt-12 rounded-sm;
+            
+            img {
+                @apply rounded-lg ;
+            }
+        }
+    }
+}
