@@ -18,20 +18,27 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'CourierPrime';
+    src: url('$lib/assets/fonts/CourierPrime-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 @theme {
     --color-primary: #eeeae4;
     --color-accent: #b5544e;
     --font-baskervville: "Baskervville", serif;
     --font-greatvibes: "GreatVibes", cursive;
     --font-e8garamond: "E8Garamond", serif;
+    --font-courierprime: "CourierPrime", monospace;
 }
 
 .container {
-    @apply text-[16px] mx-auto p-4 bg-primary min-h-screen;
+    @apply text-[16px] mx-auto p-4 bg-primary min-h-screen gap-20 flex flex-col;
 }
 
 .page1 {
-    @apply flex flex-col md:flex-row md:justify-between;
+    @apply flex flex-col h-full md:flex-row md:justify-between;
 
     .text-section {
         @apply ml-10 mr-28 mt-24 md:mr-10 flex-1;
@@ -53,6 +60,31 @@
             img {
                 @apply rounded-lg ;
             }
+        }
+    }
+}
+
+.page2 {
+    @apply h-screen px-12;
+
+    .text-section {
+        span {
+            @apply font-courierprime leading-normal font-semibold
+        }
+    }
+
+    .image-section {
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+
+        .small-image-wrapper {
+            @apply bg-black
+        }
+        .small-image{
+            @apply absolute w-28 p-1 bg-white -rotate-3
+        }
+        .big-image-wrapper {
+            @apply p-5 bg-white
         }
     }
 }

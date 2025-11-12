@@ -1,5 +1,6 @@
 <script>
     import couplePic from '$lib/assets/images/couple-pic.jpg';
+    import couplePic2 from '$lib/assets/images/couple-pic-2.jpg';
 </script>
 
 <main class="container">
@@ -25,6 +26,26 @@
         <div class="image-section">
             <div class="image-wrapper">
                 <img src={couplePic} alt="couplePic1"/>
+            </div>
+        </div>
+    </section>
+
+    <section class="page2">
+        <div class="text-section">
+            <div class="text-justify py-10">
+                <span>"And among His signs is that He created for you from yourselves mates that you may find tranquility in them; and He placed between you affection and mercy. Indeed in that are signs for a people who give thought."</span>
+            </div>
+            <div class="">
+                <span class="italic">QS. Ar-Rum: 21</span>
+            </div>
+        </div>
+
+        <div class="image-section relative">
+            <div class="small-image-wrapper">
+                <img class="small-image" src={couplePic2} alt="couplePic2"/>
+            </div>
+            <div class="big-image-wrapper">
+                <img class="" src={couplePic2} alt="couplePic2"/>
             </div>
         </div>
     </section>
