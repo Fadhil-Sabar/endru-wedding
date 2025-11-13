@@ -25,7 +25,7 @@
 
         <div class="image-section">
             <div class="image-wrapper">
-                <enhanced:img src={couplePic} alt="couplePic1"/>
+                <enhanced:img fetchpriority="high" src={couplePic} alt="couplePic1"/>
             </div>
         </div>
     </section>
@@ -42,10 +42,10 @@
 
         <div class="image-section relative">
             <div class="small-image-wrapper">
-                <enhanced:img class="small-image" src={couplePic2} alt="couplePic2"/>
+                <enhanced:img fetchpriority="high" class="small-image" src={couplePic2} alt="couplePic2"/>
             </div>
             <div class="big-image-wrapper">
-                <enhanced:img class="" src={couplePic2} alt="couplePic2"/>
+                <enhanced:img fetchpriority="high" class="" src={couplePic2} alt="couplePic2"/>
             </div>
         </div>
     </section>
